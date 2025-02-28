@@ -41,7 +41,7 @@ fun FactListScreen() {
 
 @Composable
 fun FactCard(fact: FactCard) {
-    // Здесь можно настроить карточку для отображения данных из объекта fact
+
     Card(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(4.dp)
@@ -50,7 +50,6 @@ fun FactCard(fact: FactCard) {
             Text(text = fact.title, style = MaterialTheme.typography.headlineSmall)
             Text(text = fact.description)
             Text(text = fact.date)
-            // Если изображение доступно
             Image(painter = painterResource(id = fact.imageResId), contentDescription = null)
         }
     }
